@@ -1,0 +1,15 @@
+/home/lama/RiderProjects/Esdc2/Esdc/bin/Debug/net7.0/Esdc
+/home/lama/RiderProjects/Esdc2/Esdc/bin/Debug/net7.0/Esdc.deps.json
+/home/lama/RiderProjects/Esdc2/Esdc/bin/Debug/net7.0/Esdc.runtimeconfig.json
+/home/lama/RiderProjects/Esdc2/Esdc/bin/Debug/net7.0/Esdc.dll
+/home/lama/RiderProjects/Esdc2/Esdc/bin/Debug/net7.0/Esdc.pdb
+/home/lama/RiderProjects/Esdc2/Esdc/obj/Debug/net7.0/Esdc.csproj.AssemblyReference.cache
+/home/lama/RiderProjects/Esdc2/Esdc/obj/Debug/net7.0/Esdc.GeneratedMSBuildEditorConfig.editorconfig
+/home/lama/RiderProjects/Esdc2/Esdc/obj/Debug/net7.0/Esdc.AssemblyInfoInputs.cache
+/home/lama/RiderProjects/Esdc2/Esdc/obj/Debug/net7.0/Esdc.AssemblyInfo.cs
+/home/lama/RiderProjects/Esdc2/Esdc/obj/Debug/net7.0/Esdc.csproj.CoreCompileInputs.cache
+/home/lama/RiderProjects/Esdc2/Esdc/obj/Debug/net7.0/Esdc.dll
+/home/lama/RiderProjects/Esdc2/Esdc/obj/Debug/net7.0/refint/Esdc.dll
+/home/lama/RiderProjects/Esdc2/Esdc/obj/Debug/net7.0/Esdc.pdb
+/home/lama/RiderProjects/Esdc2/Esdc/obj/Debug/net7.0/Esdc.genruntimeconfig.cache
+/home/lama/RiderProjects/Esdc2/Esdc/obj/Debug/net7.0/ref/Esdc.dll

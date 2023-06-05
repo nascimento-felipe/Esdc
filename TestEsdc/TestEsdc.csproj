@@ -17,7 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="TestFilas\" />
+      <ProjectReference Include="..\Esdc\Esdc.csproj" />
     </ItemGroup>
 
 </Project>

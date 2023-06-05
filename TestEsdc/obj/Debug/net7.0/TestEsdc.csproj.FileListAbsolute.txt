@@ -96,3 +96,9 @@
 /home/lama/RiderProjects/Esdc2/TestEsdc/obj/Debug/net7.0/TestEsdc.pdb
 /home/lama/RiderProjects/Esdc2/TestEsdc/obj/Debug/net7.0/TestEsdc.genruntimeconfig.cache
 /home/lama/RiderProjects/Esdc2/TestEsdc/obj/Debug/net7.0/ref/TestEsdc.dll
+/home/lama/RiderProjects/Esdc2/TestEsdc/bin/Debug/net7.0/CoverletSourceRootsMapping
+/home/lama/RiderProjects/Esdc2/TestEsdc/bin/Debug/net7.0/Esdc.deps.json
+/home/lama/RiderProjects/Esdc2/TestEsdc/bin/Debug/net7.0/Esdc.runtimeconfig.json
+/home/lama/RiderProjects/Esdc2/TestEsdc/bin/Debug/net7.0/Esdc
+/home/lama/RiderProjects/Esdc2/TestEsdc/bin/Debug/net7.0/Esdc.dll
+/home/lama/RiderProjects/Esdc2/TestEsdc/bin/Debug/net7.0/Esdc.pdb

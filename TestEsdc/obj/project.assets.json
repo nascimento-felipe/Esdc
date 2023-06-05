@@ -973,6 +973,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "Esdc/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Esdc.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Esdc.dll": {}
+        }
       }
     }
   },
@@ -3945,10 +3955,16 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "Esdc/1.0.0": {
+      "type": "project",
+      "path": "../Esdc/Esdc.csproj",
+      "msbuildProject": "../Esdc/Esdc.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Esdc >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
@@ -3980,7 +3996,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/lama/RiderProjects/Esdc2/Esdc/Esdc.csproj": {
+              "projectPath": "/home/lama/RiderProjects/Esdc2/Esdc/Esdc.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
