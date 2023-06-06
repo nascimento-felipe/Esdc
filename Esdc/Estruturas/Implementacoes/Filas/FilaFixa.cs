@@ -1,32 +1,51 @@
 using System.Text;
 using Esdc.Estruturas.Interfaces;
+using Esdc.Utils;
 
 namespace Esdc.Estruturas.Implementacoes.Filas;
 
 // TODO: [ ] Fazer a documentação dessa classe
 
-public class Fila<T> : IFila<T>
+public class FilaFixa<T> : IFila<T>
 {
     private T[] items;
-    private readonly int size;
+    private int size;
     private int tail;
     private int head;
 
-    public Fila(int tamanho)
+    public FilaFixa(int tamanho)
     {
+        if (tamanho <= 0)
+        {
+            throw new ArgumentOutOfRangeException("tamanho",
+                ErrorMessages.CreationUnderZero("fila"));
+        }
+
         items = new T[tamanho];
-        size = tamanho;
+        size = 0;
         head = 0;
         tail = 0;
     }
 
     public void Enqueue(T item)
     {
+        if (size + 1 > items.Length)
+        {
+            throw new Exception(ErrorMessages.MaximumCapacity("fila"));
+        }
+
+        size++;
         items[ReturnMod(tail++)] = item;
     }
 
     public T Dequeue()
     {
+        if (size == 0)
+        {
+            throw new Exception(ErrorMessages.MinimumCapacity("fila"));
+        }
+
+        size--;
         return items[ReturnMod(head++)];
     }
 
@@ -76,6 +95,6 @@ public class Fila<T> : IFila<T>
     {
         if (valor == 0) return 0;
 
-        return valor % size;
+        return valor % items.Length;
     }
 }
