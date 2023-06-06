@@ -1,5 +1,6 @@
 using System.Text;
 using Esdc.Estruturas.Interfaces;
+using Esdc.Utils;
 
 namespace Esdc.Estruturas.Implementacoes.Pilhas;
 
@@ -27,6 +28,12 @@ public class PilhaFixa<T> : IPilha<T>
     ///
     public PilhaFixa(int tamanho)
     {
+        if (tamanho <= 0)
+        {
+            throw new ArgumentOutOfRangeException("tamanho",
+                ErrorMessages.CreationUnderZero("pilha"));
+        }
+
         items = new T[tamanho];
         size = 0;
     }
@@ -34,12 +41,22 @@ public class PilhaFixa<T> : IPilha<T>
 
     public void Push(T item)
     {
+        if (size + 1 > items.Length)
+        {
+            throw new Exception(ErrorMessages.MaximumCapacity("pilha"));
+        }
+
         items[size++] = item;
     }
 
 
     public T Pop()
     {
+        if (size == 0)
+        {
+            throw new Exception(ErrorMessages.MinimumCapacity("pilha"));
+        }
+
         return items[--size];
     }
 
