@@ -6,13 +6,13 @@ public interface IPilha<T>
     /// Adiciona um novo item à pilha.
     /// </summary>
     /// <param name="item">Item para ser adicionado à pilha.</param>
-    void Push(T item);
+    void Push(T? item);
 
     /// <summary>
     /// Remove o último item da pilha.
     /// </summary>
     /// <returns> Retorna o item excluído da pilha.</returns>
-    T Pop();
+    T? Pop();
 
     /// <summary>
     /// Verifica se a pilha está vazia
@@ -36,5 +36,5 @@ public interface IPilha<T>
     /// Iterator com todos os valores da pilha.
     /// </summary>
     /// <returns>Todos os valores da pilha, seguindo a ordem de inserção.</returns>
-    IEnumerable<T> AllItems();
+    IEnumerable<T?> AllItems();
 }
