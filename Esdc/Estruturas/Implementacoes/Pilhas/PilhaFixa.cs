@@ -4,8 +4,6 @@ using Esdc.Utils;
 
 namespace Esdc.Estruturas.Implementacoes.Pilhas;
 
-// TODO: [ ] Fazer a documentação dessa classe
-
 /// <summary>
 /// Estrutura de dados que funciona com a lógica FILO. Essa classe tem um array não redimensionável.
 /// </summary>
@@ -14,7 +12,7 @@ public class PilhaFixa<T> : IPilha<T>
     /// <summary>
     /// Array de items com os valores da pilha.
     /// </summary>
-    private T[] items;
+    private T?[] items;
 
     /// <summary>
     /// Tamanho da pilha.
@@ -39,7 +37,7 @@ public class PilhaFixa<T> : IPilha<T>
     }
 
 
-    public void Push(T item)
+    public void Push(T? item)
     {
         if (size + 1 > items.Length)
         {
@@ -50,7 +48,7 @@ public class PilhaFixa<T> : IPilha<T>
     }
 
 
-    public T Pop()
+    public T? Pop()
     {
         if (size == 0)
         {
@@ -72,9 +70,9 @@ public class PilhaFixa<T> : IPilha<T>
         return size;
     }
 
-    public IEnumerable<T> AllItems()
+    public IEnumerable<T?> AllItems()
     {
-        foreach (T value in items)
+        foreach (T? value in items)
         {
             yield return value;
         }
